@@ -8,7 +8,8 @@ defmodule Issues.MixProject do
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      escript: escript()
+      escript: escript(),
+      source_url: "https://github.com/iAmmarTahir/issue_checker"
     ]
   end
 
@@ -24,7 +25,7 @@ defmodule Issues.MixProject do
     [
       {:httpoison, "~> 1.0.0" },
       {:poison, "~> 3.1"},
-      {:ex_doc, "~> 0.18.1"},
+      {:ex_doc, "~> 0.19"},
       {:earmark, "~> 1.2.4"}
     ]
   end
